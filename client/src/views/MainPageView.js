@@ -3,6 +3,8 @@ import autobind from 'react-autobind';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
+import MainStartPage from '../components/MainStartPage';
+
 import {setAllNewsData} from '../actions/commonActionsCreators';
 
 class MainPageView extends React.Component {
@@ -33,9 +35,7 @@ class MainPageView extends React.Component {
 
     render() {
         return (
-            <div>
-                Hello
-            </div>
+            <MainStartPage />
         );
     }
 }
