@@ -1,5 +1,8 @@
 import React from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
+
+import MainPageView from './views/MainPageView';
+
 import './assets/styles/App.css';
 
 const App = () => (
@@ -10,7 +13,7 @@ const App = () => (
                      path="/"
                      component={MainPageView}
               />
-              <Route path="/login"
+              {/* <Route path="/login"
                      component={MainPageView}
               />
               <Route path="/news"
@@ -18,7 +21,7 @@ const App = () => (
               />
               <Route path="/profile"
                      component={MainPageView}
-              />
+              /> */}
           </Switch>
       </BrowserRouter>
   </div>
